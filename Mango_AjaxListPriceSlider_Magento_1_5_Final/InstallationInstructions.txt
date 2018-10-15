@@ -1,0 +1,15 @@
+Thanks for buying the Ajax PriceSlider Module.
+
+Installation Steps:
+
+1. Drop the app-skin folders in your magento installation folder. 
+2. Go to YOUR_THEME_CHANGES, if you haven't changed your theme yet, you can drop the page and catalog folders on yourtheme/template folder.
+
+If you already have a customized theme:
+
+you will find the page/1column.phtml 2columns-left.phtml 2columns-right.phtml and 3columns.phtml.  You can see the code changes between commented lines.
+The catalog/product/list/toolbar.phtml and page/html/pager.phtml files are like the default ones, but for all the <select> boxes remove the [onchange="setLocation(this.value)"] code.
+Finally, replace your catalog/layer/filter.phtml file with the file provided. 
+You should logout and login again to access the configuration section of the extension, there you can set the step value for the price slider.
+
+After that, do not forget to refresh your Magento cache. If any doubt or comment, please do not hesitate to contact us. 

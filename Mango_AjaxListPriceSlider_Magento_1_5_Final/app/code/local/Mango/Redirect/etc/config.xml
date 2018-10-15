@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+  * @category   Mango
+ * @package    Mango_Redirect
+ * @copyright  Copyright (c) 2010 Mango Extensions
+ */
+-->
+<config>
+    <modules>
+        <Mango_Redirect>
+            <version>0.1.0</version>
+        </Mango_Redirect>
+    </modules>
+    <global>
+        <routers>
+            <catalog>
+                <rewrite>
+                    <product_compare>
+                        <to>Mango_Redirect/product_compare</to>
+                    </product_compare>
+                </rewrite>
+            </catalog>
+        </routers>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <cart>Mango_Redirect_Block_Cart</cart>
+                </rewrite>
+            </checkout>
+        </blocks>
+
+    </global>
+     <frontend>
+        <routers>
+            <redirect>
+                <use>standard</use>
+                <args>
+                    <module>Mango_Redirect</module>
+                    <frontName>redirect</frontName>
+                </args>
+            </redirect>
+        </routers>
+        
+    </frontend>
+</config>	
